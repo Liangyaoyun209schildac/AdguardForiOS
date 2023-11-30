@@ -25,4 +25,4 @@ jobs:
         ruby-version: 3.2.2
 
     - name: Publish to GPR
-      run: bundle exec build && bundle exec fastlane adhoc
+      run: bundle install && bundle exec build && bundle exec fastlane adhoc
